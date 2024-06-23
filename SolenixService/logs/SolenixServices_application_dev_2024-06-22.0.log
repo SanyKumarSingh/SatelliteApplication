@@ -1,0 +1,176 @@
+2024-06-22 18:03:01,267 [main] INFO  com.solenix.Application - Starting Application using Java 17.0.9 with PID 21908 (C:\Users\a5143522\SolenixWorkspace\SolenixService\target\classes started by a5143522 in C:\Users\a5143522\SolenixWorkspace\SolenixService)
+2024-06-22 18:03:01,268 [main] INFO  com.solenix.Application - The following 1 profile is active: "dev"
+2024-06-22 18:03:02,588 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22 18:03:02,687 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2024-06-22 18:03:03,589 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8282 (http)
+2024-06-22 18:03:03,613 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8282"]
+2024-06-22 18:03:03,617 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-22 18:03:03,618 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-22 18:03:03,701 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-22 18:03:03,702 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2375 ms
+2024-06-22 18:03:04,221 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-22 18:03:04,463 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22 18:03:04,524 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-22 18:03:04,563 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-22 18:03:04,812 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22 18:03:04,866 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22 18:03:05,941 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22 18:03:05,998 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 18:03:06,710 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-22 18:03:08,388 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2024-06-22 18:03:08,547 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8282"]
+2024-06-22 18:03:08,608 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8282 (http) with context path ''
+2024-06-22 18:03:08,654 [main] INFO  com.solenix.Application - Started Application in 7.812 seconds (process running for 8.654)
+2024-06-22 18:03:08,669 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-22T18:03:08.669825200
+2024-06-22 18:03:08,688 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-22 18:03:10,477 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-22 18:03:10,483 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-22T18:03:10.483733600
+2024-06-22 18:04:26,210 [http-nio-8282-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-22 18:04:26,210 [http-nio-8282-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-22 18:04:26,213 [http-nio-8282-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-22 18:04:26,305 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31947
+2024-06-22 18:06:45,241 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:06:45,268 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:06:47,524 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:06:47,693 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:06:57,332 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to Create a new event.
+2024-06-22 18:06:57,333 [http-nio-8282-exec-9] INFO  c.s.service.impl.EventServiceImpl - Processing LotSplit Request ####
+2024-06-22 18:06:57,337 [http-nio-8282-exec-9] INFO  c.s.service.impl.EventServiceImpl - Event create successfully !!!!
+2024-06-22 18:06:57,338 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Satellite creation completed successfully!!!
+2024-06-22 18:07:01,047 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:07:01,066 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:07:36,096 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:07:36,105 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:07:42,034 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:07:42,044 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:08:15,100 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:08:15,110 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:11:43,339 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:11:43,348 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:12:25,116 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:12:25,126 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:01,098 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:01,108 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:18,101 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:18,111 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:24,050 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:13:24,096 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:13:33,978 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to Create a new event.
+2024-06-22 18:13:33,980 [http-nio-8282-exec-2] INFO  c.s.service.impl.EventServiceImpl - Processing LotSplit Request ####
+2024-06-22 18:13:33,983 [http-nio-8282-exec-2] INFO  c.s.service.impl.EventServiceImpl - Event create successfully !!!!
+2024-06-22 18:13:33,984 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Satellite creation completed successfully!!!
+2024-06-22 18:13:36,134 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:36,153 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:13:48,755 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31927
+2024-06-22 18:14:45,965 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:14:45,978 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:14:52,186 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:14:52,195 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:14:54,859 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31851
+2024-06-22 18:15:38,124 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:15:38,135 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:15:41,055 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:15:41,066 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:15:43,496 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31851
+2024-06-22 18:16:58,375 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:16:58,385 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:00,712 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31851
+2024-06-22 18:17:37,567 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:37,580 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:38,750 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31927
+2024-06-22 18:17:53,114 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:53,159 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:56,005 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:56,016 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:17:57,445 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31851
+2024-06-22 18:18:03,717 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:18:03,761 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:18:05,279 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:18:05,301 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:18:06,592 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31927
+2024-06-22 18:18:49,584 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:18:49,617 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:18:50,442 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:18:50,465 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:18:54,912 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31927
+2024-06-22 18:20:05,104 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:05,112 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:07,852 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:07,864 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:10,105 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: STARLINK-31927
+2024-06-22 18:20:18,938 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:20:18,962 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:20:29,457 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to Create a new event.
+2024-06-22 18:20:29,458 [http-nio-8282-exec-4] INFO  c.s.service.impl.EventServiceImpl - Processing LotSplit Request ####
+2024-06-22 18:20:29,459 [http-nio-8282-exec-4] INFO  c.s.service.impl.EventServiceImpl - Event create successfully !!!!
+2024-06-22 18:20:29,460 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Satellite creation completed successfully!!!
+2024-06-22 18:20:32,528 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:32,538 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:20:34,348 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: 2024-110A
+2024-06-22 18:21:16,795 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:21:16,813 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:21:31,878 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to Create a new event.
+2024-06-22 18:21:31,879 [http-nio-8282-exec-5] INFO  c.s.service.impl.EventServiceImpl - Processing LotSplit Request ####
+2024-06-22 18:21:31,882 [http-nio-8282-exec-5] INFO  c.s.service.impl.EventServiceImpl - Event create successfully !!!!
+2024-06-22 18:21:31,882 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Satellite creation completed successfully!!!
+2024-06-22 18:21:33,744 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:21:33,753 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:21:36,565 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch TLE Info for satellite: 2024-115B
+2024-06-22 18:21:48,099 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:21:48,105 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:43:42,797 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:43:42,826 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:43:45,858 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:43:45,871 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:45:46,892 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:45:46,930 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:45:47,871 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:45:47,887 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:45:53,428 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:45:53,445 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 18:55:55,465 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 18:55:55,514 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:24:57,432 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:24:57,464 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:24:59,304 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:24:59,320 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:39:18,949 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:39:18,983 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:39:20,884 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:39:20,899 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:42:58,662 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:42:58,683 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:42:59,942 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:42:59,956 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:02,968 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:02,980 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:06,958 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:43:06,982 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:43:16,420 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to Create a new event.
+2024-06-22 19:43:16,421 [http-nio-8282-exec-2] INFO  c.s.service.impl.EventServiceImpl - Processing LotSplit Request ####
+2024-06-22 19:43:16,426 [http-nio-8282-exec-2] INFO  c.s.service.impl.EventServiceImpl - Event create successfully !!!!
+2024-06-22 19:43:16,427 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Satellite creation completed successfully!!!
+2024-06-22 19:43:20,702 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:20,718 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:30,644 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:43:30,654 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:44:11,076 [http-nio-8282-exec-8] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:44:11,100 [http-nio-8282-exec-4] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:44:13,006 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:44:13,016 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:50:33,740 [http-nio-8282-exec-6] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:50:33,762 [http-nio-8282-exec-5] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:50:35,492 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:50:35,508 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:53:06,243 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:53:06,270 [http-nio-8282-exec-1] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-22 19:53:07,538 [http-nio-8282-exec-2] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 19:53:07,552 [http-nio-8282-exec-10] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-22 20:03:08,626 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-22T20:03:08.626256300
+2024-06-22 20:03:08,630 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-22 20:03:10,726 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-22 20:03:10,730 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-22T20:03:10.730532600
+2024-06-22 22:03:08,591 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-22T22:03:08.591105900
+2024-06-22 22:03:08,592 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-22 22:03:09,858 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-22 22:03:09,861 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-22T22:03:09.861498400

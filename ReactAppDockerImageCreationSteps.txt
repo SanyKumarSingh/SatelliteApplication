@@ -1,0 +1,20 @@
+Steps to create image for react app:
+
+1. Create the docker file
+2. Create docker ignore file
+3. run the docker desktop and following command
+     -- navigate to application folder
+     -- run cmd ---->  docker build -t solenixwebapp:1.0 .  
+	 
+4. this will build the docker image 
+   -- docker images --> this will show all the images
+   
+5. We need o expose our docker image to a port 
+   docker run -d -p 3000:3000 solenixwebapp:1.0
+   
+   >> 82ef18cdf8c11a88eaccb499add55449ee1218a15aa8a5a86ff847d3381e4a6e
+   
+   C:\Users\a5143522\SolenixWorkspace\solenix-app>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                    NAMES
+82ef18cdf8c1   solenixwebapp:1.0   "docker-entrypoint.s…"   22 seconds ago   Up 20 seconds   0.0.0.0:3000->3000/tcp   inspiring_blackwell
+   

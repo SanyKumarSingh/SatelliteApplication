@@ -1,0 +1,38 @@
+// Use DBML to define your database structure. Docs: https://dbml.dbdiagram.io/docs
+// dbdiagram.io provides user-friendly interface to design and visualize ER diagram.
+// Use your Java Entity class to map the variable names and its datatype.
+// Use the RelationShip mentioned in the Entity class to mention the Ref:
+
+// GYM ER Diagram - https://dbdiagram.io/d/667312605a764b3c72e83ed3
+
+Table Satellite {
+  id Long [primary key]
+  satelliteName String
+}
+
+Table Event {
+  id Long [primary key]
+  date Date 
+  description String
+  priority String
+}
+
+Ref: Event.id > Satellite.id // many-to-one
+
+
+
+Table User {
+  id Long [primary key]
+  userName String
+  email String
+  role String
+}
+
+Table EventRequest {
+  id Long [primary key]
+  date Date 
+  json String
+  status String
+}
+
+Ref: EventRequest.id > User.id // many-to-one

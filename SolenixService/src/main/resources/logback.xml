@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- Define spring.profiles.active property -->
+    <springProperty scope="context" name="env" source="spring.profiles.active" defaultValue=""/>
+
+	<!-- Default logfile for Unix -->
+	<property name="logFile" value="/localdisk/SolenixServices_application_${env}" />
+
+	<!-- For Windows -->
+    <if condition='property("os.name").toLowerCase().contains("windows")'>
+        <then>
+        	<!-- Writes logs file under /GymServices directory in users home directory -->
+			<!-- The ${user.home} placeholder represents the user's home directory, 
+				equivalent to %USERPROFILE% in Windows and /home/username in Linux. 
+				Logback will resolve this placeholder at runtime based on the system properties. -->
+            <property name="logFile" value="${user.home}/SolenixWorkspace/SolenixService/logs/SolenixServices_application_${env}" />
+        </then>
+    </if>
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logFile}.log</file>
+		<append>true</append>
+		 <!-- Define the log layout (pattern) here, same for both logfile and console -->
+		<encoder>
+			<!-- The log message format uses a pattern that includes the date, thread, 
+				log level, logger name, and the log message. -->
+			<pattern>%date [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- Maximum file size of each log file -->
+            <maxFileSize>5MB</maxFileSize>
+            <!-- Roll over files every day at midnight, a new log file would be created when 
+            the file size exceeds 5MB or when a new hour begins, whichever comes first -->
+            <fileNamePattern>${logFile}_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- Keep at most 3 days of archived files -->
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+	</appender>
+
+	<!-- sets the logging level to INFO and associates the FILE appender with 
+		it, so all logs at or above the INFO level will be written to the log file. -->
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+	</root>
+
+
+
+	<!-- Appender for SQL Queries -->
+	<appender name="SQL_FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logFile}-sql.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<maxFileSize>5MB</maxFileSize>
+			<fileNamePattern>${logFile}-sql_%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<maxHistory>3</maxHistory>
+		</rollingPolicy>
+	</appender>
+
+	<!-- Logger for Hikari connection pool -->
+	<logger name="com.zaxxer.hikari" level="debug"
+		additivity="false">
+		<appender-ref ref="SQL_FILE" />
+	</logger>
+
+</configuration>

@@ -1,0 +1,30 @@
+Steps to create image for SpringBoot app:
+
+1. Create the docker file
+    FROM openjdk:17
+    EXPOSE 8282
+    ADD target/solanix-service-docker.jar solenixservice.jar
+    ENTRYPOINT ["java", "-jar", "solenixservice.jar"]
+
+
+2. We need to create a jar with specific name 
+     >>  Add final name in pom.xml ---<finalName>springboot-mongo-docker</finalName>
+	 now do mvn install --> in target folder the jar will be created   --> springboot-mongo-docker.jar 
+	 
+	 
+3. run the docker desktop and following command
+     -- navigate to application folder
+     -- run cmd ---->  docker build -t solenixservice:1.0 .  
+	 
+4. this will build the docker image 
+   -- docker images --> this will show all the images
+   
+5. We need o expose our docker image to a port 
+   docker run -p 8282:8282 solenixservice:1.0
+   
+   >> 82ef18cdf8c11a88eaccb499add55449ee1218a15aa8a5a86ff847d3381e4a6e
+   
+   C:\Users\a5143522\SolenixWorkspace\solenix-app>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                    NAMES
+82ef18cdf8c1   solenixwebapp:1.0   "docker-entrypoint.s…"   22 seconds ago   Up 20 seconds   0.0.0.0:3000->3000/tcp   inspiring_blackwell
+   

@@ -1,0 +1,24 @@
+2024-06-23 00:03:08,546 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-23T00:03:08.546716100
+2024-06-23 00:03:08,554 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-23 00:03:09,987 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-23 00:03:09,990 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-23T00:03:09.990188500
+2024-06-23 08:40:53,172 [http-nio-8282-exec-7] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-23 08:40:54,478 [http-nio-8282-exec-3] INFO  c.s.c.SatelliteEventController - Received request to fetch list of satellites.
+2024-06-23 09:07:16,992 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:16.987830300
+2024-06-23 09:07:17,043 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-23 09:07:18,805 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-23 09:07:18,811 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:18.811814500
+2024-06-23 09:07:18,812 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:18.812654
+2024-06-23 09:07:18,813 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-23 09:07:19,478 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-23 09:07:19,480 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:19.480962600
+2024-06-23 09:07:19,481 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:19.481853500
+2024-06-23 09:07:19,481 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-23 09:07:20,194 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-23 09:07:20,222 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:20.222219
+2024-06-23 09:07:20,222 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Starting updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:20.222742800
+2024-06-23 09:07:20,223 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Started Satellite information Update Scheduler ####
+2024-06-23 09:07:20,747 [scheduling-1] INFO  c.s.service.impl.TLEServiceImpl - Completed Satellite information Update Scheduler  ####
+2024-06-23 09:07:20,750 [scheduling-1] INFO  c.s.utility.TLEInfoUpdateScheduler - Completed updateTLEInformation Job!!!! Timestamp : 2024-06-23T09:07:20.750549400
+2024-06-23 09:11:24,502 [http-nio-8282-exec-9] INFO  c.s.c.SatelliteEventController - Received request to fetch list of events.
+2024-06-23 09:11:30,790 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

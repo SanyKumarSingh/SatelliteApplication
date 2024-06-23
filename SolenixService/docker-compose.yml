@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: solenixwebapp:1.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - service
+
+  service:
+    image: solenixservice:1.0
+    ports:
+      - "8282:8282"
